@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-container" id="contain" data-theme="light">
+            <div class="app-top-bar">
+                <button class="btn btn-pri">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <h1 class="app-head">Weather App</h1>
+                <button class="btn btn-pri" id="toggler">    
+                    <!-- small -->
+                    <i class="fas fa-light fa-moon" id="toggler-icon"></i>
+                </button>
+            </div>
+            <div class="app-content">
+                <button class="btn btn-block">
+                    <span class="subtitle">Period</span>
+                    <span class="subtitle">Today</span>
+                    <!-- small -->
+                    <div class="btn btn-pri">
+                        <i class="fas fa-chevron-right"></i>
+
+                    </div>
+                </button>
+                <div class="btn btn-dial">
+                    <span class="btn-dial-spoke"></span>
+                    <span class="btn-dial-spoke"></span>
+                    <span class="btn-dial-spoke"></span>
+                    <span class="btn-dial-spoke"></span>
+                    <span class="btn-dial-spoke"></span>
+                    <span class="btn-dial-spoke"></span>
+                    <div class="btn-dial-top"></div>
+                    <div class="btn-dial-label">
+                        <i class="fas fa-light fa-temperature-half"></i>27&deg;C
+                        <!-- <p>27&deg;C</p> -->
+                    </div>
+                </div>
+                <div class="flex-button-container">
+                    <!-- large -->
+                    <button class="btn btn-sec">
+                        <i class="fas fa-light fa-cloud-rain fa-2x1" style="color:#1885ffe3"></i>13%
+                        <!-- <p>13%</p> -->
+                    </button>
+                    <button class="btn btn-sec">
+                        <i class="fas fa-light fa-wind fa-2x1" style="color:#0f345fe3" id="wind"></i>>6 Km/h
+                        <!-- <p>6 Km/h</p> -->
+
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
